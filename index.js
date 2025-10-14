@@ -13,7 +13,7 @@ app.get('/health', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.render('index', { title: 'Najeeb Patoana DevOps{}' });
+  res.render('index', { title: 'Najeeb Patoana DevOps' });
 });
 
 
