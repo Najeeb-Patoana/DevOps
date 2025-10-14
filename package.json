@@ -1,14 +1,14 @@
 {
   "name": "devops",
   "version": "1.0.0",
+  "description": "A simple Express + EJS web app for DevOps testing and deployment.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Najeeb",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^5.1.0",
