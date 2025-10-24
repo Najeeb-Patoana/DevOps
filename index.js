@@ -13,7 +13,7 @@ app.get('/health', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.render('index', { title: 'Najeeb BS SE 7 DevOps' });
+  res.render('index', { title: 'Najeeb BS SE 7 DevOps Lab' });
 });
 
 
