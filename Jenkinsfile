@@ -12,28 +12,22 @@ pipeline {
             }
         }
 
-        stage('Test') {
+        stage('Link Vercel Project') {
             steps {
-                echo 'not test'
-            }
-        }
-
-        stage('Build (optional)') {
-            steps {
-                echo 'not test'
+                bat 'npx vercel link --project devops --yes --token=%VERCEL_TOKEN%'
             }
         }
 
         stage('Deploy to Vercel') {
             steps {
-                bat 'npx vercel --prod --yes --token=%VERCEL_TOKEN% --name devops'
+                bat 'npx vercel deploy --prod --yes --token=%VERCEL_TOKEN%'
             }
         }
     }
 
     post {
         success {
-            echo ' Deployment successful!'
+            echo 'Deployment successful!'
         }
         failure {
             echo 'Pipeline failed. Check logs.'
