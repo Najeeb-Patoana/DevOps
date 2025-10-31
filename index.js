@@ -13,10 +13,11 @@ app.get('/health', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.render('index', { title: 'Najeeb BS SE 7 DevOps Lab 8' });
+  res.render('index', { title: 'shujaat  BS SE 7 DevOps Lab 5' });
 });
 
 
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
+ 
